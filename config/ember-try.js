@@ -14,5 +14,15 @@ module.exports = {
     resolutions: {
       "ember": "release"
     }
+  }, {
+    name: 'ember-canary',
+    dependencies: {
+      'ember': 'canary'
+    }
+  }, {
+    name: 'ember-beta',
+    dependencies: {
+      'ember': 'components/ember#beta'
+    }
   }]
 };

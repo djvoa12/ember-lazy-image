@@ -9,8 +9,11 @@ export default Mixin.create({
 
   lazyUrl: null,
 
-  handleDidInsertElement: on('didInsertElement', function() {
+  handleDidInsertElement: on('didReceiveAttrs', function() {
     this._setupAttributes();
+  }),
+
+  handleSetImageUrl: on('willRender', function() {
     this._setImageUrl();
   }),
 

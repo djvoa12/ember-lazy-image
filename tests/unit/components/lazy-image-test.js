@@ -7,6 +7,8 @@ import {
 import Cache from 'ember-lazy-image/lib/cache';
 
 moduleForComponent('lazy-image', 'LazyImageComponent', {
+  unit: true,
+
   beforeEach: function() {
     this.container.register('config:in-viewport', { viewportUseRAF: false }, { instantiate: false });
 
